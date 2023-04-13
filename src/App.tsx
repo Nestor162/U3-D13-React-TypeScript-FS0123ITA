@@ -1,14 +1,21 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import ArticlesFetch from "./components/ArticlesFetch";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
+import ArticleDetails from "./components/ArticleDetails";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-center mb-4 mt-5">Breaking News 🚀</h1>
       <Container>
-        <ArticlesFetch />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/details/:elementId" element={<ArticleDetails />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
       </Container>
     </div>
   );
