@@ -4,7 +4,7 @@ Soddisfa le richieste e cerca di implementare i tipi e le interfacce al meglio c
 
 ### 📃 API Docs:
 
-Puoi trovare l’intera documentazione qui –> [LINK](https://api.spaceflightnewsapi.net/v3/documentation)
+Puoi trovare l’intera documentazione qui –> [LINK](https://api.spaceflightnewsapi.net/v4/documentation/)
 
 L’endpoint per ottenere la lista di articoli sarà così:
 
