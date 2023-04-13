@@ -25,7 +25,6 @@ function ArticlesFetch() {
 
   return (
     <>
-      <h1>Breaking News 🚀</h1>
       {articles &&
         articles.results.map(article => {
           return <Articles article={article} />;
